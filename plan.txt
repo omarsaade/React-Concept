@@ -1,14 +1,16 @@
 step1:
 style.css---
-index.html=>index.php
+index.html=>index.php  =>finito fahem
+yufadal testa3mel span badal label 7ad el input
 
 step2:
-login.html
+login.html=>finito
 
 step3:
 users.HTML
 
 step4:
+chat.html
 
 
 
@@ -23,7 +25,7 @@ notes:
 When autocomplete is on, the browser
 automatically complete values based on values that the user has entered before.
 
-4- span and label are same --bya3mlo display flex
+4- label --bya3ml display flex ma3 el input...yaane byeje 7ad sa7bo
 bi 3akes el p wel h(1 to 6)...
 
 5- <div class="field input">
@@ -42,6 +44,14 @@ mnhot ahlo 3andon postion:relative w huwe el shi 3ando
 position:absolute w mna3ti right and top w iza bada mn2elo
 transform: translateY(-50%) la children tab3an
 
+
+7- <img src="a.jpg" class="a"> kif bta3mla lal sura duwayra?
+bt2elo  => .a{ border-radius: 50%;}
+
+
+
+8- fik ta3mul button bi hay el tari2a
+<button><i class="fas fa-search"></i></button>
 
 
 

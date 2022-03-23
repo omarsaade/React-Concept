@@ -138,6 +138,7 @@ body {
   padding: 25px 30px;
 }
 
+/* hay taba3 el header / parent:div & a */
 .users header,
 .users-list a {
   display: flex;
@@ -195,6 +196,8 @@ body {
 .users .search .text {
   font-size: 18px;
 }
+
+
 
 .users .search input {
   position: absolute;
