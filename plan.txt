@@ -1,0 +1,61 @@
+Timestamps:
+1- Demo of Chat Application
+2- HTML & CSS Start
+3- Creating Signup Form (HTML)
+4- Styling Signup Form (CSS)
+5- Creating Login Form (HTML)
+6- Creating Users List Page (HTML)
+7- Styling Users List Page (CSS)
+8- Creating Chat Area Page (HTML)
+9- Styling Chat Area Page (CSS)
+
+JavaScript Codes Timestamps
+10- JavaScript Start
+11- Search Bar Show Hide Toggle
+12- Ajax for Signup Form
+13- Ajax for Login Form
+
+PHP Codes Timestamps
+14- Creating Database
+15- Configuration with Database
+16- PHP Code for Signup Form
+17- Creating Tables
+18- PHP Code for Login Form
+19- Making Users Page Dynamic
+19- Making Chat Area Dynamic
+20- Showing Last sent Message
+21- PHP Code for Logout user
+===========================================================================================================================
+=========================================================================================================================
+===================================================================================================================
+================================================================================================================
+
+
+
+Timestamps:
+0:00 Demo of Chat Application
+12:38 HTML & CSS Start
+12:51 Creating Signup Form (HTML)
+15:40 Styling Signup Form (CSS)
+21:03 Creating Login Form (HTML)
+23:01 Creating Users List Page (HTML)
+24:50 Styling Users List Page (CSS)
+35:07 Creating Chat Area Page (HTML)
+35:51 Styling Chat Area Page (CSS)
+
+JavaScript Codes Timestamps
+46:36 JavaScript Start
+51:33 Search Bar Show Hide Toggle
+57:23 Ajax for Signup Form
+1:31:04 Ajax for Login Form
+
+PHP Codes Timestamps
+1:01:26 Creating Database
+1:01:41 Configuration with Database
+1:04:30 PHP Code for Signup Form
+1:10:09 Creating Tables
+1:32:01 PHP Code for Login Form
+1:38:09 Making Users Page Dynamic
+1:58:45 Making Chat Area Dynamic
+2:20:14 Showing Last sent Message
+2:35:21 PHP Code for Logout user
