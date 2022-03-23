@@ -13,6 +13,39 @@ step4:
 
 
 
+notes:
+-------
+1-header lezem ykun degre baada h(1,2,3,4,5,6)
+
+2-section lezem ykun degre baada h(1,2,3,4,5,6)
+
+3-<form autocomplete="on">
+When autocomplete is on, the browser
+automatically complete values based on values that the user has entered before.
+
+4- span and label are same --bya3mlo display flex
+bi 3akes el p wel h(1 to 6)...
+
+5- <div class="field input">
+          <label>Email Address</label>
+          <input type="text" name="email" placeholder="Enter your email" required>
+    </div>
+.form form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+}
+
+6-iza badna nel3ab bi place of icon
+mnhot ahlo 3andon postion:relative w huwe el shi 3ando
+position:absolute w mna3ti right and top w iza bada mn2elo
+transform: translateY(-50%) la children tab3an
+
+
+
+
+
 Timestamps:
 1- Demo of Chat Application
 2- HTML & CSS Start
