@@ -7,10 +7,10 @@ step2:
 login.html=>finito
 
 step3:
-users.HTML
+users.HTML=>finito
 
 step4:
-chat.html
+chat.html=>
 
 
 
@@ -53,7 +53,8 @@ bt2elo  => .a{ border-radius: 50%;}
 8- fik ta3mul button bi hay el tari2a
 <button><i class="fas fa-search"></i></button>
 
-
+9-overflow-y: auto;
+bt5alik ta3mul scroll y bel nzul metel el chat text
 
 
 Timestamps:

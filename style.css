@@ -113,7 +113,14 @@ body {
   transform: translateY(-50%);
 }
 
+
+/* eye-slash https://fontawesome.com/icons/eye-slash?s=regular */
+/* bel <i> deyman fi before maktube
+ jaweta bel html w hye el default
+ yaane lama ana gayera bi wahde tenye ka before bteje ma77ala degre
+ replacement . bi 3akes el ::after li bteje baada w mesh faw2a */
 .form form .field i.active::before {
+  /* add content before active */
   color: #333;
   content: "\f070";
 }
@@ -197,6 +204,18 @@ body {
   font-size: 18px;
 }
 
+/* ============================================ */
+/* hay hye li 5affet el input search bel users */
+/* opacity: 0; */
+/* pointer-events: none; */
+
+/* ============================= */
+/* position: absolute;
+height: 42px;
+width: calc(100% - 50px); */
+/* hol el option 3 heni li 5efyin el span bas tef2us ,
+khsuse el position li hye absolute for children
+but relative for parents */
 
 
 .users .search input {
@@ -209,11 +228,18 @@ body {
   outline: none;
   border-radius: 5px 0 0 5px;
   opacity: 0;
+  /*hay hye*/
   pointer-events: none;
   transition: all 0.2s ease;
 }
 
-.users .search input.show {
+/* .users .search input.show {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+/* importante */
+.users .search input.active {
   opacity: 1;
   pointer-events: auto;
 }
@@ -238,6 +264,7 @@ body {
   color: #fff;
 }
 
+/* this is a uncode of an icon */
 .search button.active i::before {
   content: '\f00d';
 }
