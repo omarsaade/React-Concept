@@ -10,9 +10,3 @@
     <!-- install font awesome library // Get data for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
-
-<body>
-
-</body>
-
-</html>
