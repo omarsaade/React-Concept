@@ -17,11 +17,7 @@ if (!isset($_SESSION['unique_id'])) {
                 $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
                 if (mysqli_num_rows($sql) > 0) {
                     $row = mysqli_fetch_assoc($sql);
-                }
-
-
-
-                ?>
+                } ?>
                 <div class="content">
                     <img src="php/images/<?php echo $row['img']; ?>" alt="">
                     <div class="details">
@@ -38,61 +34,14 @@ if (!isset($_SESSION['unique_id'])) {
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
-                    <div class="content">
-                        <img src="download.jpg" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="download.jpg" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="download.jpg" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="download.jpg" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="download.jpg" alt="">
-                        <div class="details">
-                            <span>Coding Nepal</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+                <!-- static before..now we want to display the users dynamically -->
             </div>
         </section>
     </div>
 
     <script src="javascript/users.js"></script>
+
+
 
 
 </body>

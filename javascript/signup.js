@@ -37,6 +37,11 @@ continueBtn.onclick = () => {
     // we have to send the form data through ajax to php
     let formData = new FormData(form);//creating new formData
     xhr.send(formData);//sending to form data to php
+    // To POST data like an HTML form, add an HTTP header 
+    // with setRequestHeader(). Specify the data you want to send 
+    // in the send() method:
+
+
 
 }
 

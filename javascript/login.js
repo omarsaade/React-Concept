@@ -2,6 +2,7 @@ const form = document.querySelector(".login form"); //el form kella
 const continueBtn = form.querySelector(".button input");//fa2set el submit
 const errorText = form.querySelector(".error-text");
 
+//
 //he el function li tahet btemna3 el submit tenbe3et
 // e hye khassa hasran bel event handlers w ma bteje ma3 gayra
 form.onsubmit = (e) => {

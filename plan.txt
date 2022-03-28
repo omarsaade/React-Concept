@@ -121,3 +121,22 @@ PHP Codes Timestamps
 1:58:45 Making Chat Area Dynamic
 2:20:14 Showing Last sent Message
 2:35:21 PHP Code for Logout user
+
+xmlhttp request : huwe li bibadel el ma3lumet ben el server wel client
+fa lezem awal shi nenshe2o'
+
+1- var request = new XMLHttpRequest();
+mnenshe2o bi esem xhr la hata nesta3mlo ...ma kell marra neraj3 nektbo
+
+2- request.open(method ,url ,async,user,pasw)
+//ktir ma3lumet POST
+//shway ma3lumet GET
+//url huwe mahal el milaf li badna net3amal ma3o
+// async:gayr motazamen true => code shegaal bel 5alfyeh
+//sync : motazamen => false , byentur la ye5las
+3-request.send();
+
+1-inshe2 request
+2-haded no3 el request
+3- ba3t hayda el isti3lam lal server
+
