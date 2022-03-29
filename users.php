@@ -11,6 +11,8 @@ if (!isset($_SESSION['unique_id'])) {
 <body>
     <div class="wrapper">
         <section class="users">
+
+
             <header>
                 <?php
                 include_once "php/config.php";
@@ -25,17 +27,23 @@ if (!isset($_SESSION['unique_id'])) {
                         <p><?php echo $row['status']; ?></p>
                     </div>
                 </div>
-                <a href="#" class="logout">Logout</a>
+                <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
             </header>
+
+
             <div class="search">
                 <span class="text">Select an user to start chat</span>
                 <!-- remove input -->
                 <input type="text" placeholder="Enter name to search...">
                 <button><i class="fas fa-search"></i></button>
             </div>
+
+
             <div class="users-list">
                 <!-- static before..now we want to display the users dynamically -->
             </div>
+
+
         </section>
     </div>
 

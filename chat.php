@@ -29,30 +29,8 @@ if (!isset($_SESSION['unique_id'])) {
                     </p>
                 </div>
             </header>
-            <div class="chat-box">
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>abu 7meddd akhiiii</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="download.jpg" alt="">
-                    <div class="details">
-                        <p>ahla amuuraaa</p>
-                    </div>
-                </div>
-                <div class="chat outgoing">
-                    <div class="details">
-                        <p>kifak akhiiii</p>
-                    </div>
-                </div>
-                <div class="chat incoming">
-                    <img src="download.jpg" alt="">
-                    <div class="details">
-                        <p>tamem</p>
-                    </div>
-                </div>
-            </div>
+            <div class="chat-box"></div>
+
             <form class="typing-area" action="#" autocomplete="off">
                 <input type="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id']; ?>" hidden>
                 <input type="text" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
