@@ -1,0 +1,10 @@
+{
+  "name": "aiarabia",
+  "displayName": "AI Arabia",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-6149035153464150~9436252064",
+    "ios_app_id": "ca-app-pub-6149035153464150~9627823759"
+  },
+  "mixPanelToken": "b11728024a90563edb8b3c46784ff2f3",
+  "trackAutomaticEvents": true
+}

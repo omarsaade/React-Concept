@@ -1,0 +1,23 @@
+{
+  "admob_android_adunit_id": "ca-app-pub-6149035153464150/5545682904",
+  "admob_android_app_id": "ca-app-pub-6149035153464150~9436252064",
+  "admob_ios_adunit_id": "ca-app-pub-6149035153464150/8358841637",
+  "admob_ios_app_id": "ca-app-pub-6149035153464150~9627823759",
+  "admob_token": "admob_39dzu9bafb",
+  "close_subscription_popup_delay_in_seconds": 5,
+  "enable_admob_test_mode": 0,
+  "facebook_url": "http://wecansync.com",
+  "instagram_url": "http://wecansync.com",
+  "mixpanel_token": "b4f6d843f61c7fd23ee323e9b32b5762",
+  "revenue_cat_android_key": "goog_mndOFbtCcoNKGMZABogBZVEzNce",
+  "revenue_cat_ios_key": "appl_fzFlmxofESmwnkppZcKSdxgYQKg",
+  "revenue_cat_private_key": "sk_pebJmrlgOyhDNsVlqGBHOdKwSpIpR",
+  "snapchat_url": "http://wecansync.com",
+  "subscription_popup_delay_in_seconds": 100,
+  "subscription_popup_frequency_in_seconds": 100,
+  "tiktok_url": "http://wecansync.com",
+  "tokens_on_register": 700,
+  "tokens_per_ad": 100,
+  "twitter_url": "http://wecansync.com",
+  "youtube_url": "http://wecansync.com"
+}

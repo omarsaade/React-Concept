@@ -1,0 +1,98 @@
+/**
+ * @format
+ */
+
+import {AppRegistry, Alert} from 'react-native';
+import App from './src/App';
+import {name as appName} from './app.json';
+import {Provider} from 'react-redux';
+import {PaperProvider} from 'react-native-paper';
+import {store} from './src/store/Index/store';
+import {LogBox} from 'react-native';
+import messaging from '@react-native-firebase/messaging';
+import PushNotificationIOS from '@react-native-community/push-notification-ios';
+import PushNotification from 'react-native-push-notification';
+import {handleNotification} from './src/Services/registerDevice';
+
+// Must be outside of any component LifeCycle (such as `componentDidMount`).
+PushNotification.configure({
+  // (optional) Called when Token is generated (iOS and Android)
+  onRegister: function (token) {
+    //console.log('TOKEN:', token);
+  },
+
+  // (required) Called when a remote is received or opened, or local notification is opened
+  onNotification: function (notification) {
+    //console.log('NOTIFICATION:', notification);
+
+    // process the notification
+
+    // (required) Called when a remote is received or opened, or local notification is opened
+    notification.finish(PushNotificationIOS.FetchResult.NoData);
+  },
+
+  // android: {
+  //   // Use the custom icon you added in the res folder
+  //   // largeIcon: 'custom_notification_icon',
+  //   // Custom notification icon color (Android API level 21+)
+  //   color: 'red', // Change this to your desired color
+  //   // Other Android-specific configuration options
+  // },
+
+  // (optional) Called when Registered Action is pressed and invokeApp is false, if true onNotification will be called (Android)
+  onAction: function (notification) {
+    //console.log('ACTION:', notification.action);
+    //console.log('NOTIFICATION:', notification);
+    // process the action
+  },
+
+  // (optional) Called when the user fails to register for remote notifications. Typically occurs when APNS is having issues, or the device is a simulator. (iOS)
+  onRegistrationError: function (err) {
+    console.error(err.message, err);
+  },
+
+  // IOS ONLY (optional): default: all - Permissions to register.
+  permissions: {
+    alert: true,
+    badge: true,
+    sound: true,
+  },
+
+  // Should the initial notification be popped automatically
+  // default: true
+  popInitialNotification: true,
+
+  /**
+   * (optional) default: true
+   * - Specified if permissions (ios) and token (android and ios) will requested or not,
+   * - if not, you must call PushNotificationsHandler.requestPermissions() later
+   * - if you are not using remote notification or do not have Firebase installed, use this:
+   *     requestPermissions: Platform.OS === 'ios'
+   */
+  requestPermissions: true,
+});
+
+messaging().setBackgroundMessageHandler(async remoteMessage => {
+  try {
+    // Call the handleNotification function for background messages
+    handleNotification(remoteMessage);
+
+    // Additional code as needed
+
+    //console.log('Message handled in the background!', remoteMessage);
+  } catch (error) {
+    console.error('Error handling background message:', error);
+  }
+});
+
+AppRegistry.registerComponent(appName, () => () => (
+  <Provider store={store}>
+    <PaperProvider>
+      <App />
+    </PaperProvider>
+  </Provider>
+));
+
+LogBox.ignoreLogs(['new NativeEventEmitter']);
+LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreAllLogs();
